@@ -1,0 +1,109 @@
+Repository
+1) GitHub / GitLab / BitBucket
+
+Python
+******
+    High Level Interpreted Programming Language
+
+1) Variables
+    
+2) Functions
+        
+3) OOPS
+    Class
+    Object
+    Polymorphism
+    Inheritance
+    Encapsulation
+    Abstraction
+
+4) list
+       collection of ordered elements
+       mutable
+       hetrogeneous
+       []
+
+5) tuple
+        collection of ordered elements
+        immutable
+        hetrogeneous
+        ()
+
+6) set
+        wont allows duplicates
+
+7) Dictonary
+        {key : value}
+
+8) matplotlib
+        line
+        bar
+        pie
+        scatter
+        --
+        --
+        --
+
+9) seaborn
+
+10) pandas
+        Excel Sheets
+        CSV files
+
+Machine Learning
+    Supervised          Unsupervised.        Reinforcement
+
+        11 - 12 Algo - Mathematical Proofs (Statistics)
+
+Deep Learning
+        Images
+        Face Auth App
+
+        CNN
+        --
+        --
+        --
+
+        Medical Related Application
+
+NLP (Natural Language Processing)
+    Telugu
+    English
+    Hindi
+    Tamil
+    ---
+    ---
+    ---
+
+    Bot Application ---> ReactJS Appln ---> MLOps
+
+Gen AI
+    LLM'S
+
+    New Content ---> Text
+                     Code
+                     Images
+                     Audio
+                     Video
+
+    Application ---> Spring Boot Appln ---> MLOps
+
+Agentic AI
+
+    Agent ---> Host
+
+    Agent(Deploy) ---> Reply
+
+MLOps
+
+CI/CD Pipeline
+    GitHub
+    Jenkins
+    Docker
+    EC2
+
+Each Module
+
+        ML/DL/NLP ---> Assignments /. Assessments
+
+4 months
