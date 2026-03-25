@@ -107,3 +107,16 @@ Each Module
         ML/DL/NLP ---> Assignments /. Assessments
 
 4 months
+
+IDE
+***
+        VSCode (Visual Studio Code)
+
+link : https://code.visualstudio.com/download
+
+        File --> AutoSave (Application Code will save automatically)
+
+Python:
+        https://www.python.org/downloads/
+
+        > python3 --version
