@@ -99,5 +99,76 @@
 # print(True or False) #True
 # print(not True) #False
 
-print( 3>2>1 ) #True
-print( 1<2<3 ) #True
+# print( 3>2>1 ) #True
+# print( 1<2<3 ) #True
+
+# list
+# ordered
+# hetrogeneous
+# mutable
+# []
+
+# list1 = [10,20,30,40,50]
+# print(list1[0])
+# print(list1[-1])
+# print(len(list1))
+# print(sum(list1))
+# print(max(list1))
+# print(min(list1))
+# list1[0] = 1000
+# list1[4] = 5000
+# print(list1)
+# for element in list1:
+#     print(element)
+# print(type(list1))
+
+# Tuple
+# Ordered
+# Immutable (we can't modify)
+# ()
+# Hetrogeneous
+# Faster Compared to List
+
+#t1 = (10,20,30,40,50)
+#print(t1) #(10, 20, 30, 40, 50)
+#print(t1[0])
+#t1[0] = 1000 #'tuple' object does not support item assignment
+# for element in t1:
+#     print(element)
+#print(type(t1))
+
+# Set
+# Unordered
+# No Duplicates
+# {}
+
+# set1 = {1,2,3,3}
+# print(set1)
+# print(type(set1))
+
+#Dictonary
+#key-value pairs
+#mutable
+# student = {
+#     "name":"Std1",
+#     "course":"Gen AI",
+#     "fee" : 20000
+# }
+# print(student["name"])
+# print(student["fee"])
+# print(type(student))
+
+# None
+# empty / no result
+# x = None
+# print(x) #None
+# print(type(x)) #<class 'NoneType'>
+# print(x + 10) #Err
+
+x = int(10.5)
+print(x)
+y = float(5)
+print(y)
+z = str(100)
+print(z)
+
