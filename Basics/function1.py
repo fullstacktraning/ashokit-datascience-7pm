@@ -1,3 +1,87 @@
+
+# f = lambda a = 10 : a + 10
+# print(f())
+# print(f(20))
+
+
+# filter() - used to apply conditions
+# print( list( filter( lambda num: num%2 == 0 , [1,2,3,4,5] ) ) )
+
+
+# map() - used to manipulate all list items
+# print( list( map(lambda x:x*x,[1,2,3,4]) ) )
+
+# addition = lambda param1, param2 : param1 + param2
+# print(addition(200,100))
+
+# def test_func(param1 = []):
+#     param1.append(1)
+#     return param1
+
+# print( test_func() )
+# print( test_func() )
+# print( test_func() )
+
+
+# balance = 1000 # global
+
+# def widthdraw(amount):
+#     global balance
+#     if balance>=amount:
+#         balance-=amount
+#         return balance
+#     return "Insufficient Balance"
+
+# res1 = widthdraw(200)
+# print(res1)
+
+# res2 = widthdraw(10000)
+# print(res2)
+
+
+
+# LEGB Rule # L - Local E - Enclosing G - Global B - Built-in
+# name = "HPSchool" # global
+# def student():
+#     #name = "STD1"  # enclosing
+#     def info():
+#         #name = "CLASS X" # local
+#         print(name)
+#     info()
+
+# student()
+
+
+
+
+
+# def test1():
+#     num1 = 200
+#     def test2():
+#         nonlocal num1
+#         num1 = num1 * num1
+#         print(num1)
+#     test2()
+# test1()
+
+
+
+
+
+
+#Closure
+# def outer():
+#     x = 10 #local variable
+
+#     def inner():
+#         print(x)
+    
+#     inner()
+
+# outer()
+
+
+
 # num1 = 200
 # def test_func():
 #     global num1
@@ -13,7 +97,6 @@
 #     print(num1)
 
 # test_func() #UnboundLocalError
-
 
 
 
