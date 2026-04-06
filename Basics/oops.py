@@ -145,9 +145,118 @@
 # print(obj.x)
 
 
+#Example-13
+# class Parent:
+#     def test_func1(self):
+#         print("Hello, Parent")
 
+# class Child(Parent):
+#     def test_func2(self):
+#         print("Hello,Child")
 
+# class Subchild(Child):
+#     def test_func3(self):
+#         print("Hello,Subchild")
 
+# obj = Subchild()
+# obj.test_func1()
+# obj.test_func2()
+# obj.test_func3()
 
+# Example - 14
+# method overriding
+# class Parent():
+#     def db_conn(self):
+#         return "mysql conn soon"
+# class Child(Parent):
+#     def db_conn(self):
+#         return "mongodb conn soon"
+    
+# obj = Child()
+# res = obj.db_conn()
+# print(res)
 
+# Example - 15
+# class Parent():
+#     def db_conn(self):
+#         return "mongodb conn soon...!"
+    
+# class Child(Parent):
+#     def test_func(self):
+#         return super().db_conn()
 
+# obj = Child()
+# res = obj.test_func()
+# print(res)
+
+# Example - 16
+# Encapsulation
+# class Class1:
+#     def __init__(self):
+#         self.__x = 100  # private
+
+# obj = Class1()
+# # obj.__x # unable to access private variable
+# print( obj._Class1__x ) # we are able to access private variable
+
+# Example - 17 
+# Polymorphism (Behaves like many)
+# class Demo():
+#     def addn(self,param1,param2):
+#         print(param1 + param2)
+
+# obj = Demo()
+# obj.addn(200,100) # addn -- adding
+# obj.addn("Hello","Welcome") # addn -- concatination
+
+# Example - 18
+# from abc import ABC,abstractmethod
+# class Shape(ABC):
+#     @abstractmethod
+#     def area(self):
+#         pass
+
+# class Circle(Shape):
+#     def __init__(self,radius):
+#        self.radius = radius
+
+#     def area(self):
+#         return 3.14 * self.radius * self.radius
+
+# class Rect(Shape):
+#     def __init__(self,width,height):
+#         self.width = width
+#         self.height = height
+
+#     def area(self):
+#         return 2 * self.width * self.height
+
+# c = Circle(10)
+# res1 = c.area()
+# print(res1)
+
+# r = Rect(200,100)
+# res2 = r.area()
+# print(res2)
+
+# Example - 19 (Dunder)
+# class Demo():
+#     def __str__(self):
+#         return "Hello"
+    
+
+# obj = Demo()
+# print(obj)
+
+# Example - 20
+class Test1():
+    def show(self):
+        print("Test1")
+class Test2():
+    def show(self):
+        print("Test2")
+class Test3(Test2,Test1):
+    pass
+
+obj = Test3()
+obj.show()
