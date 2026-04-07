@@ -130,3 +130,13 @@ Variables
         *****
                 Variables declaration must contain "a-z, A-Z, 0-9, $ and _"
                 Variables declaration should not start with "numbers"
+
+> python3 -m venv venv
+
+> source venv/bin/activate (Mac Book)
+      (or)
+  venv\Scripts\activate (CMD)
+       (or)
+  venv\Scripts\activate.ps1 (Powershell)
+
+> pip install -r requirements.txt
