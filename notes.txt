@@ -140,3 +140,14 @@ Variables
   venv\Scripts\activate.ps1 (Powershell)
 
 > pip install -r requirements.txt
+
+
+pandas
+******
+        Data Analysis
+        Data Cleaning
+        Data Manipulation
+
+        Tabular Data
+
+> pip install pandas
