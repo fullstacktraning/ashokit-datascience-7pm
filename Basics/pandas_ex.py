@@ -66,3 +66,51 @@ import pandas as pd
 # print(df.notnull())
 # print(df.dropna())
 # print(df.fillna(100))
+
+# Ex-9
+# df = pd.read_csv("students.csv")
+# print(df.sort_values("Marks"))                  #Ascending
+# print(df.sort_values("Marks",ascending=False))  #Decending
+
+# Ex-10
+# data = {
+#     "Dept" : ["IT","IT","HR","HR"],
+#     "Salary" : [50000,60000,45000,40000]
+# }
+# df = pd.DataFrame(data)
+# print(df.groupby("Dept")["Salary"].sum())
+# print(df.groupby("Dept")["Salary"].mean())
+# print(df.groupby("Dept")["Salary"].max())
+# print(df.groupby("Dept")["Salary"].min())
+
+# Ex-11
+# df1 = pd.DataFrame({
+#     "ID" : [101,102],
+#     "Name" : ["Std1","Std2"]
+# })
+
+# df2 = pd.DataFrame({
+#     "ID" : [101,102],
+#     "Marks":[90,95]
+# })
+
+# print( pd.merge(df1,df2,on="ID") )
+
+# Ex-12
+# df = pd.read_csv("students.csv")
+# df["Marks"] = df["Marks"].apply(lambda x:x+10)
+# print(df)
+
+# Ex-13
+# df = pd.read_csv("students.csv")
+# print( df["Marks"].value_counts() )
+
+# Ex-14
+data = {
+    "Name" : ["Ravi","Sita","John","Ravi"],
+    "Dept" : ["IT","HR","IT","IT"],
+    "Marks" : [85,90,None,85]
+}
+df = pd.DataFrame(data)
+df["Marks"] = df["Marks"].fillna(df["Marks"].mean())
+print(df.drop_duplicates().groupby("Dept")["Marks"].mean())
