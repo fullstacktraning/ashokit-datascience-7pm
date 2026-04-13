@@ -151,3 +151,16 @@ pandas
         Tabular Data
 
 > pip install pandas
+
+matplotlib
+**********
+        matplotlib for "data visualization"
+        Supports
+        1) Line Plots
+        2) Bar Chart
+        3) Histogram
+        4) Scatter plots
+        5) Sub plots
+        6) Custom Styling
+
+        
