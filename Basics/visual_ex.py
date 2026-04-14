@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Example-1
 # x = [1,2,3,4]
@@ -53,23 +54,61 @@ import matplotlib.pyplot as plt
 
 # Example-4
 # Bar Chart
-months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-sales = [20000, 25000, 18000, 30000, 28000, 22000]
-max_sale = max(sales)
-min_sale = min(sales)
-colors = []
-for s in sales:
-    if s == max_sale:
-        colors.append("green")
-    elif s == min_sale:
-        colors.append("red")
-    else:
-        colors.append("blue")
-plt.figure(figsize=(8,5))
-plt.bar(months,sales,color=colors)
-for i in range(len(months)):
-    plt.text(i,sales[i],str(sales[i]),ha="center")
-plt.title("Monthly Sales Report")
-plt.xlabel("Months")
-plt.ylabel("Sales")
-plt.show()
+# months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+# sales = [20000, 25000, 18000, 30000, 28000, 22000]
+# max_sale = max(sales)
+# min_sale = min(sales)
+# colors = []
+# for s in sales:
+#     if s == max_sale:
+#         colors.append("green")
+#     elif s == min_sale:
+#         colors.append("red")
+#     else:
+#         colors.append("blue")
+# plt.figure(figsize=(8,5))
+# plt.bar(months,sales,color=colors)
+# for i in range(len(months)):
+#     plt.text(i,sales[i],str(sales[i]),ha="center")
+# plt.title("Monthly Sales Report")
+# plt.xlabel("Months")
+# plt.ylabel("Sales")
+# plt.show()
+
+
+# Example-5
+# Histogram
+# marks = [35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 60, 70, 80, 55, 65, 75]
+# min marks = 35
+# max marks = 95
+# diff = 60
+# ranges/bins : 5 => 60/5 = 12
+# Bin1 : 35 - 47.   Bin2 : 47 - 59.  Bin3 : 59 - 71.   Bin4: 71 - 83. Bin5: 83 - 95
+# plt.figure(figsize=(8,5))
+
+# plt.hist(marks, bins=5, edgecolor='black')
+# plt.title("Students Marks")
+# plt.xlabel("Marks Range")
+# plt.ylabel("Number of Students")
+
+# mean = np.mean(marks)
+# plt.axvline(mean,linestyle='--')
+
+# plt.grid(True)
+
+# plt.show()
+
+# Example-6
+# Pie Chart
+# categories = ["Rent", "Food", "Travel", "Shopping", "Others"]
+# expenses = [15000, 6000, 3000, 4000, 2000]
+# max_index = expenses.index(max(expenses)) # 0
+# colors = ['red','green','blue','yellow','orange']
+
+# explode = [0] * len(expenses) # explode = [0,0,0,0,0]
+# explode[max_index] = 0.1 # explode = [0.1,0,0,0,0]
+
+# plt.figure(figsize=(6,6))
+# plt.pie(expenses,labels=categories,explode=explode,autopct='%1.1f%%',shadow=True,colors=colors)
+# plt.title('Monthly Expense Distribution')
+# plt.show()  
