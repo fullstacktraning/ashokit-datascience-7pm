@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-
+import pandas as pd
 # Example-1
 # x = [1,2,3,4]
 # y = [10,20,25,30]
@@ -112,3 +112,32 @@ import numpy as np
 # plt.pie(expenses,labels=categories,explode=explode,autopct='%1.1f%%',shadow=True,colors=colors)
 # plt.title('Monthly Expense Distribution')
 # plt.show()  
+
+# Example-7
+# Subplots (Dashboard)
+df = pd.read_csv("students.csv")
+fig, ax = plt.subplots(2,2,figsize=(10,8))
+
+#graph1
+valid1 = df[["students", "marks"]].dropna()
+
+ax[0,0].plot(valid1["students"], valid1["marks"], marker='o')
+ax[0,0].set_title("Marks Trend")
+
+#graph2
+valid2 = df[["subjects", "subject_marks"]].dropna()
+ax[0,1].bar(valid2["subjects"], valid2["subject_marks"])
+ax[0,1].set_title("Subject wise marks")
+
+#graph-3
+valid3 = df[["study_hours", "marks"]].dropna()
+ax[1,0].scatter(valid3["study_hours"], valid3["marks"])
+ax[1,0].set_title("Study Hours vs Marks")
+
+#graph4
+valid4 = df["marks"].dropna()
+ax[1,1].hist(valid4, bins=5)
+ax[1,1].set_title("Marks Distribution")
+
+plt.tight_layout()
+plt.show()
