@@ -163,4 +163,12 @@ matplotlib
         5) Sub plots
         6) Custom Styling
 
-        
+seaborn
+*******
+        built on top of matplotlib
+        1) Beautiful Graphs
+        2) Statistical plots
+        3) Eazy Data analysis visualization
+        4) attractive Charts with less code
+
+        pip install seaborn
